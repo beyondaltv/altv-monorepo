@@ -9,5 +9,4 @@ resources/roleplay/*
 altv-*
 AltV.Net.Host.*
 *.log
-server.toml
 update.json
