@@ -1,0 +1,13 @@
+.server-crashes-cache/
+cache/
+data/
+modules/
+resources/*
+resources/roleplay/*
+!resources/roleplay
+!resources/roleplay/resource.toml
+altv-*
+AltV.Net.Host.*
+*.log
+server.toml
+update.json
