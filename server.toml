@@ -1,4 +1,4 @@
-name = 'alt:V Server'
+name = 'Beyond Roleplay'
 port = 7788
 players = 128
 # password = 'ultra-password'
@@ -10,3 +10,8 @@ language = 'en'
 description = 'alt:V Sample Server'
 modules = ['csharp-module']
 resources = ['roleplay']
+debug = true
+spawnAfterConnect = false
+
+[csharp-module]
+disableDependencyDownload = true
