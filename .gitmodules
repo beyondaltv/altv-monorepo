@@ -1,3 +1,6 @@
 [submodule "src/server"]
 	path = src/server
 	url = git@github.com:beyondaltv/altv-server.git
+[submodule "src/webview"]
+	path = src/webview
+	url = git@github.com:beyondaltv/altv-webview.git
