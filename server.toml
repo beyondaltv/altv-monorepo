@@ -12,6 +12,7 @@ modules = ['csharp-module']
 resources = ['roleplay']
 debug = true
 spawnAfterConnect = false
+enableSyncedMetaData = false
 
 [csharp-module]
 disableDependencyDownload = true
