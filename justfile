@@ -1,13 +1,19 @@
 default: publish run
 
-build:
+build: build-client build-server
+build-server:
     dotnet build ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
+build-client:
+    dotnet build ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj
+
+publish: publish-client publish-server
+publish-server:
+    dotnet publish ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
+publish-client:
+    dotnet publish ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj
 
 run:
     dotnet run --project ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
-
-publish:
-    dotnet publish ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
 
 update: update-server update-modules update-data
 
