@@ -4,8 +4,11 @@ data/
 modules/
 resources/*
 resources/server/*
+resources/client/*
 !resources/server
 !resources/server/resource.toml
+!resources/client
+!resources/client/resource.toml
 altv-*
 AltV.Net.Host.*
 *.log
