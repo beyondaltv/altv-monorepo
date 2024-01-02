@@ -3,9 +3,9 @@ cache/
 data/
 modules/
 resources/*
-resources/roleplay/*
-!resources/roleplay
-!resources/roleplay/resource.toml
+resources/server/*
+!resources/server
+!resources/server/resource.toml
 altv-*
 AltV.Net.Host.*
 *.log

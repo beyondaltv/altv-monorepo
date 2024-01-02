@@ -1,4 +1,4 @@
-name = 'Beyond Roleplay'
+name = 'BY:RP Development'
 port = 7788
 players = 128
 # password = 'ultra-password'
@@ -9,7 +9,7 @@ website = 'example.com'
 language = 'en'
 description = 'alt:V Sample Server'
 modules = ['csharp-module']
-resources = ['roleplay']
+resources = ['server']
 debug = true
 spawnAfterConnect = false
 enableSyncedMetaData = false

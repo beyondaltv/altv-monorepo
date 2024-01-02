@@ -1,6 +1,0 @@
-type = 'csharp'
-client-type = 'js'
-main = 'server/Server.Roleplay.dll'
-client-main = 'client/index.js'
-client-files = [ 'client/*' ]
-deps = []

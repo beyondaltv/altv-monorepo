@@ -1,13 +1,13 @@
 default: publish run
 
 build:
-    dotnet build ./src/server/Server.Roleplay/Server.Roleplay.csproj
+    dotnet build ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
 
 run:
-    dotnet run --project ./src/server/Server.Roleplay/Server.Roleplay.csproj
+    dotnet run --project ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
 
 publish:
-    dotnet publish ./src/server/Server.Roleplay/Server.Roleplay.csproj
+    dotnet publish ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
 
 update: update-server update-modules update-data
 

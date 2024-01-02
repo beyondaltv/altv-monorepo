@@ -4,9 +4,3 @@
 [submodule "src/webview"]
 	path = src/webview
 	url = git@github.com:beyondaltv/altv-webview.git
-[submodule "src/client"]
-	path = src/client
-	url = git@github.com:beyondaltv/altv-client.git
-[submodule "src/shared"]
-	path = src/shared
-	url = git@github.com:beyondaltv/altv-shared.git
