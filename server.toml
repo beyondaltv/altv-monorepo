@@ -12,7 +12,7 @@ modules = ['csharp-module']
 resources = ['server', 'client']
 debug = true
 spawnAfterConnect = false
-enableSyncedMetaData = false
+enableSyncedMetaData = true
 
 [csharp-module]
 disableDependencyDownload = true
