@@ -1,4 +1,4 @@
-set windows-shell := ["nu", "-c"]
+set windows-shell := ["cmd", "/c"]
 
 default: publish run
 
