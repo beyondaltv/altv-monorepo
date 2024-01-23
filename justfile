@@ -16,7 +16,6 @@ publish-client:
 
 run:
     altv-server.exe
-    # dotnet run --project ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
 
 update-windows: update-windows-server update-windows-modules update-windows-data
 
