@@ -1,18 +1,28 @@
 set windows-shell := ["cmd", "/c"]
 
-default: publish run
+default *args:
+    just publish {{args}}
+    just run
 
-build: build-client build-server
-build-server:
-    dotnet build ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
-build-client:
-    dotnet build ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj
+build *args:
+    just build-client {{args}}
+    just build-server {{args}}
 
-publish: publish-client publish-server
-publish-server:
-    dotnet publish ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj
-publish-client:
-    dotnet publish ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj
+build-server *args:
+    dotnet build ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj {{args}}
+
+build-client *args:
+    dotnet build ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj {{args}}
+
+publish *args:
+    just publish-client {{args}}
+    just publish-server {{args}}
+
+publish-server *args:
+    dotnet publish ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj {{args}}
+
+publish-client *args:
+    dotnet publish ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj {{args}}
 
 run:
     altv-server.exe
