@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /opt/source
 COPY . .
 RUN dotnet publish "./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj"
-RUN dotnet publish "./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj"
+RUN dotnet publish "./src/server/Beyond.Server.AltV.Resource/Beyond.Server.AltV.Resource.csproj"
 
 # Run stage
 

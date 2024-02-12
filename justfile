@@ -9,7 +9,7 @@ build *args:
     just build-server {{args}}
 
 build-server *args:
-    dotnet build ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj {{args}}
+    dotnet build ./src/server/Beyond.Server.AltV.Resource/Beyond.Server.AltV.Resource.csproj {{args}}
 
 build-client *args:
     dotnet build ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj {{args}}
@@ -19,7 +19,7 @@ publish *args:
     just publish-server {{args}}
 
 publish-server *args:
-    dotnet publish ./src/server/Beyond.Server.Resource/Beyond.Server.Resource.csproj {{args}}
+    dotnet publish ./src/server/Beyond.Server.AltV.Resource/Beyond.Server.AltV.Resource.csproj {{args}}
 
 publish-client *args:
     dotnet publish ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj {{args}}
