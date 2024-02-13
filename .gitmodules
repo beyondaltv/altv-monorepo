@@ -4,3 +4,6 @@
 [submodule "src/webview"]
 	path = src/webview
 	url = git@github.com:beyondaltv/altv-webview.git
+[submodule "sites/admin"]
+	path = sites/admin
+	url = git@github.com:beyondaltv/sites-admin.git
