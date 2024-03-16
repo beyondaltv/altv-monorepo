@@ -27,25 +27,33 @@ publish-client *args:
 run:
     altv-server.exe
 
-update-windows: update-windows-server update-windows-modules update-windows-data
+[windows]
+update: update-server update-modules update-data
 
-update-windows-server:
-    wget -N https://cdn.alt-mp.com/voice-server/dev/x64_win32/altv-voice-server.exe https://cdn.alt-mp.com/coreclr-module/dev/x64_win32/AltV.Net.Host.dll https://cdn.alt-mp.com/coreclr-module/dev/x64_win32/AltV.Net.Host.runtimeconfig.json https://cdn.alt-mp.com/data/dev/update.json https://cdn.alt-mp.com/server/dev/x64_win32/altv-crash-handler.exe https://cdn.alt-mp.com/server/dev/x64_win32/altv-server.exe
+[windows]
+update-server:
+    wget -N https://cdn.alt-mp.com/voice-server/release/x64_win32/altv-voice-server.exe https://cdn.alt-mp.com/coreclr-module/release/x64_win32/AltV.Net.Host.dll https://cdn.alt-mp.com/coreclr-module/release/x64_win32/AltV.Net.Host.runtimeconfig.json https://cdn.alt-mp.com/data/release/update.json https://cdn.alt-mp.com/server/release/x64_win32/altv-crash-handler.exe https://cdn.alt-mp.com/server/release/x64_win32/altv-server.exe
 
-update-windows-modules:
-    wget -P ./modules -N https://cdn.alt-mp.com/coreclr-module/dev/x64_win32/modules/csharp-module.dll
+[windows]
+update-modules:
+    wget -P ./modules -N https://cdn.alt-mp.com/coreclr-module/release/x64_win32/modules/csharp-module.dll
 
-update-windows-data:
-    wget -P ./data -N https://cdn.alt-mp.com/data/dev/data/vehmodels.bin https://cdn.alt-mp.com/data/dev/data/vehmods.bin https://cdn.alt-mp.com/data/dev/data/clothes.bin https://cdn.alt-mp.com/data/dev/data/pedmodels.bin https://cdn.alt-mp.com/data/dev/data/rpfdata.bin https://cdn.alt-mp.com/data/dev/data/weaponmodels.bin
+[windows]
+update-data:
+    wget -P ./data -N https://cdn.alt-mp.com/data/release/data/vehmodels.bin https://cdn.alt-mp.com/data/release/data/vehmods.bin https://cdn.alt-mp.com/data/release/data/clothes.bin https://cdn.alt-mp.com/data/release/data/pedmodels.bin https://cdn.alt-mp.com/data/release/data/rpfdata.bin https://cdn.alt-mp.com/data/release/data/weaponmodels.bin
 
 
-update-linux: update-linux-server update-linux-modules update-linux-data
+[linux]
+update: update-server update-modules update-data
 
-update-linux-server:
+[linux]
+update-server:
     wget -N https://cdn.alt-mp.com/voice-server/dev/x64_linux/altv-voice-server https://cdn.alt-mp.com/coreclr-module/dev/x64_linux/AltV.Net.Host.dll https://cdn.alt-mp.com/coreclr-module/dev/x64_linux/AltV.Net.Host.runtimeconfig.json https://cdn.alt-mp.com/data/dev/update.json https://cdn.alt-mp.com/server/dev/x64_linux/altv-crash-handler https://cdn.alt-mp.com/server/dev/x64_linux/altv-server
 
-update-linux-modules:
+[linux]
+update-modules:
     wget -P ./modules -N https://cdn.alt-mp.com/coreclr-module/dev/x64_linux/modules/libcsharp-module.so
 
-update-linux-data:
+[linux]
+update-data:
     wget -P ./data -N https://cdn.alt-mp.com/data/dev/data/vehmodels.bin https://cdn.alt-mp.com/data/dev/data/vehmods.bin https://cdn.alt-mp.com/data/dev/data/clothes.bin https://cdn.alt-mp.com/data/dev/data/pedmodels.bin https://cdn.alt-mp.com/data/dev/data/rpfdata.bin https://cdn.alt-mp.com/data/dev/data/weaponmodels.bin
