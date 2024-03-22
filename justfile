@@ -9,20 +9,20 @@ build *args:
     just build-server {{args}}
 
 build-server *args:
-    dotnet build ./src/server/Beyond.Server.AltV.Resource/Beyond.Server.AltV.Resource.csproj {{args}}
+    dotnet build ./src/server/Beyond.Server.AltV/Beyond.Server.AltV.csproj {{args}}
 
 build-client *args:
-    dotnet build ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj {{args}}
+    dotnet build ./src/server/Beyond.Client.AltV/Beyond.Client.AltV.csproj {{args}}
 
 publish *args:
     just publish-client {{args}}
     just publish-server {{args}}
 
 publish-server *args:
-    dotnet publish ./src/server/Beyond.Server.AltV.Resource/Beyond.Server.AltV.Resource.csproj {{args}}
+    dotnet publish ./src/server/Beyond.Server.AltV/Beyond.Server.AltV.csproj {{args}}
 
 publish-client *args:
-    dotnet publish ./src/server/Beyond.Client.Resource/Beyond.Client.Resource.csproj {{args}}
+    dotnet publish ./src/server/Beyond.Client.AltV/Beyond.Client.AltV.csproj {{args}}
 
 run:
     altv-server.exe

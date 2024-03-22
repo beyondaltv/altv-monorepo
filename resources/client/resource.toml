@@ -1,4 +1,4 @@
 client-type = 'csharp'
-client-main = 'bin/Beyond.Client.Resource.dll'
+client-main = 'bin/Beyond.Client.AltV.dll'
 client-files = ['bin/*']
 deps = ['server']
